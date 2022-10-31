@@ -7,7 +7,7 @@ export default function Menu(){
         <div className="container">
             <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
             <a onClick={() => router.push('/')} className="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-                <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="40" height="32" className="bi me-2"/>
+                <img src="/my-icon.png" alt="" width="40" height="40" className="bi me-2"/>
                 <span className="fs-4">My Portfolio</span>
             </a>
 

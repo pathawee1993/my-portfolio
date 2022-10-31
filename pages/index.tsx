@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import Menu from './src/menu'
+import Menu from '../components/Menu'
+import MyHead from '../components/MyHead'
 import { useRouter } from 'next/router'
 import Typewriter from 'typewriter-effect';
 
@@ -7,11 +7,7 @@ export default function Home() {
   const router = useRouter()
   return (
     <div>
-      <Head>
-        <title>My Portfolio</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <MyHead title={"Home"}/>
       <Menu/>
       <div className="container col-xxl-8 px-4 py-5">
         <div className="row flex-lg-row-reverse align-items-center g-5 py-5">

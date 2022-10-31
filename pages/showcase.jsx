@@ -1,4 +1,5 @@
-import Menu from "./src/menu";
+import Menu from "../components/Menu";
+import MyHead from "../components/MyHead";
 
 const allCards = [{
         title: "Solar monitoring system",
@@ -53,6 +54,7 @@ const Cards = () =>{
 export default function Showcase(){
     return (
         <div>
+            <MyHead title={"Showcase"}/>
             <Menu/>
             <section class="py-5 text-center container">
                 <div class="col">

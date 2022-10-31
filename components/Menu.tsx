@@ -1,5 +1,4 @@
 import { useRouter } from 'next/router'
-import useWindowDimensions from './useWindowDimention'
 
 export default function Menu(){
     const router = useRouter()

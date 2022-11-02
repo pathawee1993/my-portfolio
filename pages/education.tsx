@@ -29,7 +29,7 @@ export default function education () {
                         </div>
                     </div>
                     <div className="col-md d-flex align-items-start  py-5">
-                        <div className="icon-square bg-light text-dark flex-shrink-0 me-3">
+                        <div className="icon-square bg-light text-dark flex-shrink-0 me-3 bg-white">
                         <img src="/Hska_logo_small.svg.png" width="80" height="auto" className="rounded-circle"/>
                         </div>
                         <div>

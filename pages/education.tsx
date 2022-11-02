@@ -6,8 +6,18 @@ export default function education () {
         <div>
             <MyHead title={"Education"}/>
             <Menu/>
-            <div className="container py-5">
-                <div className="row row-cols-md-2 g-2 py-5">
+            <section className="py-5 text-center container">
+                <div className="col">
+                    <div className="row py-lg-5">
+                    <div className="col-lg-6 col-md-8 mx-auto">
+                        <h1 className="fw-light">Education</h1>
+                        {/* <p className="lead text-muted">Meet beautiful web-application built with React.js, Node.js and PostgreSQL by Pathawee Somsak</p> */}
+                    </div>
+                    </div>
+                    </div>
+            </section>
+            <div className="container">
+                <div className="row row-cols-md-2 g-2">
                     <div className="col-md d-flex align-items-start  py-5">
                         <div className="icon-square bg-light text-dark flex-shrink-0 me-3">
                         <img src="/hochschule-anhalt-logo-bildmarke.jpg" width="100" height="auto"/>

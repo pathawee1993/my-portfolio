@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 export default function Menu(){
     const router = useRouter()
     return (
-        <div className="container fixed-top bg-white" style={{"--bs-bg-opacity": 0.95}}>
+        <div className="container fixed-top bg-white" id="myMenu">
             <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
                 <a onClick={() => router.push('/')} className="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
                     <img src="/my-icon.png" alt="" width="40" height="40" className="bi me-2"/>

@@ -58,28 +58,30 @@ export default function Menu(){
                     </div>
                 </header>
             </div>):(
-                <nav className="navbar bg-white fixed-top" id="myMenu">
-                <div className="container-fluid">
-                    <a onClick={() => router.push('/')} className="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-                        <img src="/my-icon.png" alt="" width="40" height="40" className="bi me-2"/>
-                        <span className="fs-4">My Portfolio</span>
-                    </a>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars01" aria-controls="navbars01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-    
-                <div className="collapse navbar-collapse" id="navbars01">
-                    <ul className="navbar-nav me-auto md-2">
-                        <li><a className={"nav-link "+ (router.pathname == '/' ? "active":"")} onClick={() => router.push('/')}>Home</a></li>
-                        <li><a className={"nav-link "+ (router.pathname == '/showcase' ? "active":"")} onClick={() => router.push('/showcase')}>Showcase</a></li>
-                        <li><a className={"nav-link "+ (router.pathname == '/education' ? "active":"")} onClick={() => router.push('/education')}>Education</a></li>
-                        <li><a className={"nav-link "+ (router.pathname == '/skill' ? "active":"")} onClick={() => router.push('/skill')}>Skill</a></li>
-                        <li><a className={"nav-link "+ (router.pathname == '/faqs' ? "active":"")} onClick={() => router.push('/faqs')}>FAQs</a></li>
-                        <li><a className={"nav-link "+ (router.pathname == '/about' ? "active":"")} onClick={() => router.push('/about')}>About</a></li>
-                    </ul>
+                <div className='mb-5'>
+                    <nav className="navbar bg-white fixed-top" id="myMenu">
+                        <div className="container-fluid">
+                            <a onClick={() => router.push('/')} className="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                                <img src="/my-icon.png" alt="" width="40" height="40" className="bi me-2"/>
+                                <span className="fs-4">My Portfolio</span>
+                            </a>
+                            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars01" aria-controls="navbars01" aria-expanded="false" aria-label="Toggle navigation">
+                                <span className="navbar-toggler-icon"></span>
+                            </button>
+                
+                            <div className="collapse navbar-collapse" id="navbars01">
+                                <ul className="navbar-nav me-auto md-2">
+                                    <li><a className={"nav-link "+ (router.pathname == '/' ? "active":"")} onClick={() => router.push('/')}>Home</a></li>
+                                    <li><a className={"nav-link "+ (router.pathname == '/showcase' ? "active":"")} onClick={() => router.push('/showcase')}>Showcase</a></li>
+                                    <li><a className={"nav-link "+ (router.pathname == '/education' ? "active":"")} onClick={() => router.push('/education')}>Education</a></li>
+                                    <li><a className={"nav-link "+ (router.pathname == '/skill' ? "active":"")} onClick={() => router.push('/skill')}>Skill</a></li>
+                                    <li><a className={"nav-link "+ (router.pathname == '/faqs' ? "active":"")} onClick={() => router.push('/faqs')}>FAQs</a></li>
+                                    <li><a className={"nav-link "+ (router.pathname == '/about' ? "active":"")} onClick={() => router.push('/about')}>About</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
-                </div>
-            </nav>
             )}
             </div>
         )

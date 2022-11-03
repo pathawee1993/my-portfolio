@@ -30,20 +30,20 @@ const allCards = [{
 const Cards = () =>{
     var rows = []
     for (let i = 0; i < allCards.length; i++) {
-        rows.push(<div class="col">
-        <div class="card shadow-sm">
-        <div class="hovereffect">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src={allCards[i].imgSrc}></img>
-            <div class="overlay">
+        rows.push(<div className="col" key={"showcase_"+i}>
+        <div className="card shadow-sm">
+        <div className="hovereffect">
+            <img className="bd-placeholder-img card-img-top" width="100%" height="225" src={allCards[i].imgSrc}></img>
+            <div className="overlay">
             <h2>{allCards[i].title}</h2>
-            <a class="info" href="#">On updating</a>
+            <a className="info" href="#">On updating</a>
             </div>
         </div>
 
-            <div class="card-body">
+            <div className="card-body">
                 <h3>{allCards[i].title}</h3>
-                <div class="mb-1 text-muted">{allCards[i].year}</div>
-                <p class="card-text">{allCards[i].desc}</p>
+                <div className="mb-1 text-muted">{allCards[i].year}</div>
+                <p className="card-text">{allCards[i].desc}</p>
             </div>
         </div>
         </div>);
@@ -56,15 +56,15 @@ export default function Showcase(){
         <div>
             <MyHead title={"Showcase"}/>
             <Menu/>
-            <section class="py-5 text-center container">
-                <div class="col">
-                    <div class="row py-lg-5">
-                    <div class="col-lg-6 col-md-8 mx-auto">
-                        <h1 class="fw-light">Showcase</h1>
-                        <p class="lead text-muted">Meet beautiful web-application built with React.js, Node.js and PostgreSQL by Pathawee Somsak</p>
+            <section className="py-5 text-center container">
+                <div className="col">
+                    <div className="row py-lg-5">
+                    <div className="col-lg-6 col-md-8 mx-auto">
+                        <h1 className="fw-light">Showcase</h1>
+                        <p className="lead text-muted">Meet beautiful web-application built with React.js, Node.js and PostgreSQL by Pathawee Somsak</p>
                     </div>
                 
-                    <div class="row">
+                    <div className="row">
                         <div className="text-center">
                             <button type="button" className="btn btn-primary btn-lg px-4 me-md-2" onClick={() => router.push("/contact")}>Request more example</button>
                             <button type="button" className="btn btn-outline-secondary btn-lg px-4" onClick={() => router.push("/faqs")} >FAQs</button>
@@ -74,10 +74,10 @@ export default function Showcase(){
                 </div>
             </section>
 
-            <div class="album py-5 bg-light">
-                <div class="container">
+            <div className="album py-5 bg-light">
+                <div className="container">
 
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <Cards/>
                 </div>
                 </div>
